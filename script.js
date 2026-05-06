@@ -197,21 +197,34 @@ const mobileBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
 const mobileBtnIcon = document.querySelector('.mobile-menu-btn i');
 
+function openNav() {
+    navLinks.classList.add('active');
+    document.body.classList.add('nav-open');
+    if (mobileBtnIcon) mobileBtnIcon.className = 'fas fa-times';
+}
+
+function closeNav() {
+    navLinks.classList.remove('active');
+    document.body.classList.remove('nav-open');
+    if (mobileBtnIcon) mobileBtnIcon.className = 'fas fa-bars';
+}
+
 if (mobileBtn && navLinks) {
     mobileBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        const isActive = navLinks.classList.contains('active');
-        if (mobileBtnIcon) {
-            mobileBtnIcon.className = isActive ? 'fas fa-times' : 'fas fa-bars';
-        }
+        navLinks.classList.contains('active') ? closeNav() : openNav();
     });
 
+    // Close when clicking a nav link
     document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            if (mobileBtnIcon) {
-                mobileBtnIcon.className = 'fas fa-bars';
-            }
-        });
+        link.addEventListener('click', closeNav);
+    });
+
+    // Close when clicking the overlay (outside the nav)
+    document.addEventListener('click', (e) => {
+        if (navLinks.classList.contains('active') &&
+            !navLinks.contains(e.target) &&
+            !mobileBtn.contains(e.target)) {
+            closeNav();
+        }
     });
 }
