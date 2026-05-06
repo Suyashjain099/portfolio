@@ -19,12 +19,18 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     background-color: var(--bg-main);
     color: var(--text-main);
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
     position: relative;
 }
 
