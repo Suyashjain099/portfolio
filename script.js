@@ -191,3 +191,27 @@ document.addEventListener('mousemove', (e) => {
         duration: 1
     });
 });
+
+// 11. Mobile Menu Toggle
+const mobileBtn = document.querySelector('.mobile-menu-btn');
+const navLinks = document.querySelector('.nav-links');
+const mobileBtnIcon = document.querySelector('.mobile-menu-btn i');
+
+if (mobileBtn && navLinks) {
+    mobileBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const isActive = navLinks.classList.contains('active');
+        if (mobileBtnIcon) {
+            mobileBtnIcon.className = isActive ? 'fas fa-times' : 'fas fa-bars';
+        }
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            if (mobileBtnIcon) {
+                mobileBtnIcon.className = 'fas fa-bars';
+            }
+        });
+    });
+}
