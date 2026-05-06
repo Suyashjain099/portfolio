@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suyash Jain | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+    <div class="background-container">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="#hero" class="logo">Suyash<span class="highlight">.</span></a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#work">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact" class="btn-contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm Suyash Jain</p>
+                    <h1 class="hero-title">
+                        Aspiring <br>
+                        <span class="highlight typing-text"></span><span class="cursor">|</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        B.Tech Student at <strong>MNNIT Allahabad</strong>. I transform complex logic into scalable,
+                        user-centric software.
+                        Passionate about Full Stack Engineering, System Design, and Algorithmic Efficiency.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn-primary">Let's Build Together</a>
+                        <div class="social-icons">
+                            <a href="https://github.com/Suyashjain099" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/suyash-jain-261435284" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://leetcode.com/suyashjain99" target="_blank"><i class="fas fa-code"></i></a>
+                            <a href="mailto:suyashjaindamoh@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="assets/hero_3d.png" alt="Abstract 3D Shape" class="hero-img">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section about-section">
+            <div class="glass-container">
+                <div class="section-header">
+                    <span class="label">01 / PROFILE</span>
+                    <h2>Who I Am.</h2>
+                </div>
+                <div class="about-grid-layout">
+                    <div class="profile-image-container">
+                        <div class="profile-image-wrapper">
+                            <img src="assets/profile.png" alt="Suyash Jain" class="profile-image">
+                            <div class="profile-glow"></div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p class="lead">I am a creative logic-builder driven by <strong>precision</strong>. Currently
+                            pursuing my B.Tech at MNNIT, I bridge the gap between abstract algorithms and tangible
+                            software solutions.</p>
+
+                        <p>My technical philosophy is simple: write code that humans can read and machines can optimize.
+                            From solving 400+ problems on LeetCode to architecting full-stack MERN applications, I treat
+                            every challenge as an opportunity to refine my craft.</p>
+
+                        <p>I am looking for a challenging role where I can contribute to backend scalability, frontend
+                            interactivity, and overall system robustness.</p>
+
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <span class="stat-number counter" data-target="9.11">0</span>
+                                <span class="stat-label">Current CPI</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number counter" data-target="700">0</span><span
+                                    class="stat-plus">+</span>
+                                <span class="stat-label">Problems Solved</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number counter" data-target="20">0</span><span
+                                    class="stat-plus">+</span>
+                                <span class="stat-label">Projects Built</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERTISE SECTION -->
+        <section id="expertise" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">02 / WHAT I DO</span>
+                    <h2>Technical Expertise.</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card card-hover">
+                        <i class="fas fa-laptop-code service-icon"></i>
+                        <h3>Software Engineering</h3>
+                        <p class="justified-text">I specialize in designing and implementing robust, scalable software
+                            systems. My focus lies in low-level system design using <strong>C++ and Golang</strong>,
+                            ensuring efficient memory management and high concurrency. I apply clean architecture
+                            patterns to build maintainable backend services that can handle high-throughput loads with
+                            minimal latency.</p>
+                        <div class="tech-stack-mini">
+                            <span><i class="fab fa-golang"></i> Go</span>
+                            <span><i class="fas fa-server"></i> Systems</span>
+                            <span><i class="fas fa-database"></i> SQL</span>
+                        </div>
+                        <ul class="service-list">
+                            <li>Microservices Architecture</li>
+                            <li>REST & gRPC API Development</li>
+                            <li>Database Optimization & Indexing</li>
+                        </ul>
+                    </div>
+                    <div class="service-card card-hover">
+                        <i class="fas fa-layer-group service-icon"></i>
+                        <h3>Full Stack Development</h3>
+                        <p class="justified-text">I build end-to-end web applications that are both functional and
+                            visually engaging. Using the <strong>MERN Stack (MongoDB, Express, React, Node.js)</strong>,
+                            I craft responsive user interfaces and secure server-side logic. My workflow includes state
+                            management with Redux, component-driven design, and integrating third-party APIs for
+                            seamless functionality.</p>
+                        <div class="tech-stack-mini">
+                            <span><i class="fab fa-react"></i> React</span>
+                            <span><i class="fab fa-node"></i> Node</span>
+                            <span><i class="fas fa-leaf"></i> Mongo</span>
+                        </div>
+                        <ul class="service-list">
+                            <li>Responsive UI/UX Design</li>
+                            <li>Authentication & Security</li>
+                            <li>Real-time Websockets</li>
+                        </ul>
+                    </div>
+                    <div class="service-card card-hover">
+                        <i class="fas fa-brain service-icon"></i>
+                        <h3>Data & Algorithms</h3>
+                        <p class="justified-text">With a strong mathematical foundation, I leverage <strong>Machine
+                                Learning</strong> frameworks like TensorFlow and Scikit-Learn to extract insights from
+                            data. I am also an active competitive programmer, using advanced <strong>Data Structures and
+                                Algorithms</strong> to solve complex computational problems efficiently and optimize
+                            code performance.</p>
+                        <div class="tech-stack-mini">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-project-diagram"></i> TF</span>
+                            <span><i class="fas fa-code"></i> DSA</span>
+                        </div>
+                        <ul class="service-list">
+                            <li>Predictive Modeling & Analytics</li>
+                            <li>Graph & Dynamic Programming</li>
+                            <li>Performance Profiling</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skills Ecosystem -->
+                <div class="skills-ecosystem" style="margin-top: 5rem;">
+                    <div class="skill-category">
+                        <h4><i class="fas fa-code"></i> Languages</h4>
+                        <div class="skill-tags">
+                            <span>C++</span>
+                            <span>Golang</span>
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>SQL</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fab fa-react"></i> Frontend</h4>
+                        <div class="skill-tags">
+                            <span>React.js</span>
+                            <span>Redux</span>
+                            <span>Tailwind CSS</span>
+                            <span>GSAP</span>
+                            <span>Responsive Design</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-server"></i> Backend</h4>
+                        <div class="skill-tags">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>REST APIs</span>
+                            <span>gRPC</span>
+                            <span>Microservices</span>
+                            <span>System Design</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-database"></i> Databases</h4>
+                        <div class="skill-tags">
+                            <span>MongoDB</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                            <span>SQL Optimization</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-tools"></i> Tools & DevOps</h4>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Docker</span>
+                            <span>Postman</span>
+                            <span>Linux</span>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-brain"></i> Data & AI</h4>
+                        <div class="skill-tags">
+                            <span>TensorFlow</span>
+                            <span>Scikit-Learn</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>DSA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK/PROJECTS SECTION -->
+        <section id="work" class="section work-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">03 / PROJECTS</span>
+                    <h2>Featured Work.</h2>
+                </div>
+
+                <div class="projects-list">
+                    <!-- Project 1: Online Compiler -->
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h3>Online Compiler</h3>
+                            <p class="project-desc">A powerful, browser-based code execution engine supporting multiple
+                                languages (Python, Java, Rust, JS). Designed to provide low-latency feedback for
+                                seamless coding practice.</p>
+
+                            <div class="feature-list">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Real-time code execution with sandboxed environments.</li>
+                                    <li>Multi-language syntax highlighting strings.</li>
+                                    <li>Custom output console with error handling.</li>
+                                    <li>Responsive interface for mobile coding.</li>
+                                </ul>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Docker</span>
+                                <span>REST API</span>
+                            </div>
+                            <a href="https://github.com/Aditya-en/parth-code-editor" target="_blank"
+                                class="project-link">View on GitHub &rarr;</a>
+                        </div>
+                        <div class="project-visual">
+                            <img src="assets/project_compiler.png" alt="Online Compiler UI">
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Power Forecasting -->
+                    <div class="project-item reverse">
+                        <div class="project-info">
+                            <h3>Power Forecasting of Solar plant</h3>
+                            <p class="project-desc">A deep learning model utilizing Temporal Fusion Transformer for accurate multi-horizon time-series forecasting across varying prediction intervals.</p>
+
+                            <div class="feature-list">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Accurate multi-horizon forecasting for solar power generation.</li>
+                                    <li>Modeled static, past-observed, and known-future features.</li>
+                                    <li>Learned embeddings and variable selection networks for heterogeneous inputs.</li>
+                                </ul>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span>Python</span>
+                                <span>PyTorch</span>
+                                <span>Pandas</span>
+                            </div>
+                            <a href="https://www.kaggle.com/code/suyashjain099/power-prediction" target="_blank"
+                                class="project-link">View on Kaggle &rarr;</a>
+                        </div>
+                        <div class="project-visual">
+                            <img src="assets/project_solar.png" alt="Power Forecasting Dashboard">
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Go Web Server -->
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h3>Go Multithreaded Web Server</h3>
+                            <p class="project-desc">A modern, secure, and concurrent web server built with Go. Features HTTPS, a real-time dashboard, file uploads, and rate limiting.</p>
+
+                            <div class="feature-list">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Concurrent handling of multiple clients using Go's goroutines.</li>
+                                    <li>Rate Limiting middleware to prevent abuse.</li>
+                                    <li>Graceful Shutdown for finishing in-progress requests safely.</li>
+                                </ul>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span>Go</span>
+                                <span>Concurrency</span>
+                                <span>HTTPS/TLS</span>
+                            </div>
+                            <a href="https://github.com/Suyashjain099/Multithreaded-webserver.git" target="_blank"
+                                class="project-link">View on GitHub &rarr;</a>
+                        </div>
+                        <div class="project-visual">
+                            <img src="assets/project_go.png" alt="Go Web Server Mockup">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">04 / JOURNEY</span>
+                    <h2>Education & Honors.</h2>
+                </div>
+
+                <div class="education-grid">
+                    <!-- Education Timeline -->
+                    <div class="timeline-column">
+                        <h3 class="col-title">Academic History</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023 - 2027</div>
+                                <div class="timeline-content card-hover">
+                                    <h3>MNNIT Allahabad</h3>
+                                    <h4>B.Tech in Engineering Mechanics</h4>
+                                    <p class="grade">Current CPI: <strong>9.11</strong> (5th Sem)</p>
+                                    <p class="details">Focusing on Computational mechanics, Data Structures, and
+                                        Software Development life cycles.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022</div>
+                                <div class="timeline-content card-hover">
+                                    <h3>Kendriya Vidyalaya</h3>
+                                    <h4>Class XII (CBSE)</h4>
+                                    <p class="grade">Grade: <strong>94.4%</strong></p>
+                                    <p class="details">Excellence in Mathematics and Physics. School Topper in Computer
+                                        Science.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020</div>
+                                <div class="timeline-content card-hover">
+                                    <h3>Kendriya Vidyalaya</h3>
+                                    <h4>Class X (CBSE)</h4>
+                                    <p class="grade">Grade: <strong>92.8%</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements Column -->
+                    <div class="achievements-column">
+                        <h3 class="col-title">Achievements</h3>
+                        <div class="achievements-grid-small">
+                            <div class="achievement-card card-hover">
+                                <i class="fas fa-trophy icon"></i>
+                                <div>
+                                    <h3>3rd Position</h3>
+                                    <p>Triathlon Software, <strong>Avishkar 2024, MNNIT</strong></p>
+                                </div>
+                            </div>
+                            <div class="achievement-card card-hover">
+                                <i class="fas fa-code icon"></i>
+                                <div>
+                                    <h3>Finalist & Top 3</h3>
+                                    <p>InnoDev & Hackify Leaderboard, <strong>Avishkar 2025, MNNIT</strong></p>
+                                </div>
+                            </div>
+                            <div class="achievement-card card-hover">
+                                <i class="fas fa-laptop-code icon"></i>
+                                <div>
+                                    <h3>Hack36 Selection</h3>
+                                    <p>Selected for Hack36 2024 (offline mode), MNNIT's flagship hackathon</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="col-title" style="margin-top: 3rem;">Positions of Responsibility</h3>
+                        <ul class="responsibility-list">
+                            <li>
+                                <div class="resp-icon"><i class="fas fa-check-circle"></i></div>
+                                <div class="resp-text">
+                                    <strong>Web Team Member, SMP (2024-Present)</strong>
+                                    <p>Maintained and improved the Student Mentorship Portal.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="resp-icon"><i class="fas fa-check-circle"></i></div>
+                                <div class="resp-text">
+                                    <strong>Mentor, Student Mentorship Program</strong>
+                                    <p>Guiding juniors in web development and academics.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="resp-icon"><i class="fas fa-check-circle"></i></div>
+                                <div class="resp-text">
+                                    <strong>Member, Dramatics Society (2023-24)</strong>
+                                    <p>Active participant in cultural events.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact-section">
+            <div class="contact-container">
+                <h2 class="contact-title">Let's Engineer The Future.</h2>
+                <div class="contact-details">
+                    <p>I am seeking <strong>Software Development Engineering (SDE)</strong> roles where I can apply my
+                        computational skills to build impactful software.</p>
+                </div>
+                <div class="contact-actions">
+                    <a href="mailto:suyashjaindamoh@gmail.com" class="btn-primary big">suyashjaindamoh@gmail.com</a>
+                </div>
+
+                <div class="footer-info">
+                    <p>&copy; 2026 Suyash Jain. Designed & Built with <span style="color:var(--accent)">Code</span>.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
